@@ -8,11 +8,11 @@ const PORT = process.env.PORT || 3003;
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
 
-app.get('/', (req, res) => {
-  res.redirect(`/${uuidV4()}`)
+app.get('zoom-clon3-app.herokuapp.com', (req, res) => {
+  res.redirect(`zoom-clon3-app.herokuapp.com${uuidV4()}`)
 })
 
-app.get('/:room', (req, res) => {
+app.get('zoom-clon3-app.herokuapp.com:room', (req, res) => {
   res.render('room', { roomId: req.params.room })
 })
 
