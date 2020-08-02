@@ -2,7 +2,7 @@ const socket = io('/')
 const videoGrid = document.getElementById('video-grid')
 //const PORT = process.env.PORT || 3004;
 const myPeer = new Peer(undefined, {
-    host: 'zoom-clon3-app.herokuapp.com',
+    host: 'peerjs-server.herokuapp.com',
     secure: true,
   port: 443
 })
